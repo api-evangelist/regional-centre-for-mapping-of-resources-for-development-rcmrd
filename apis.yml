@@ -1,24 +1,64 @@
 aid: regional-centre-for-mapping-of-resources-for-development-rcmrd
+
 name: Regional Centre for Mapping of Resources for Development (RCMRD)
-description: 'Regional Centre for Mapping of Resources for Development (RCMRD) is a company surfaced via
-  the API Evangelist harvest backlog (source: vc-portfolio) and added to the network as a stub for full-pipeline
-  profiling.'
+
+description: 'The Regional Centre for Mapping of Resources for Development (RCMRD) is an inter‑governmental organization established in Nairobi, Kenya in 1975 under the United Nations Economic Commission for Africa and the African Union. It supports 20 member states across Eastern and Southern Africa, providing geospatial data, mapping services, and capacity building to aid sustainable development, climate resilience, and policy planning across the region.'
+
 url: https://raw.githubusercontent.com/api-evangelist/regional-centre-for-mapping-of-resources-for-development-rcmrd/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:vc-portfolio
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-10-23 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-10-23'
+
 modified: '2026-10-23'
+
 tags:
 - Company
-apis: []
+- Geospatial
+- Intergovernmental
+- Africa
+- Development
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
 common:
+- type: Hosts
+  url: hosts/regional-centre-for-mapping-of-resources-for-development-rcmrd-hosts.yml
+- type: SDKs
+  url: packages/regional-centre-for-mapping-of-resources-for-development-rcmrd-packages.yml
+- type: Packages
+  url: packages/regional-centre-for-mapping-of-resources-for-development-rcmrd-packages.yml
+- type: GitHubOrganization
+  url: https://github.com/RCMRD
+- type: DomainSecurity
+  url: security/regional-centre-for-mapping-of-resources-for-development-rcmrd-domain-security.yml
 - type: Website
-  url: http://www.rcmrd.org
+  url: https://rcmrd.org
+
+apis: []
+
+x-coverage:
+  state: unreadable
+  reason: no-machine-readable-spec
+  detail: No OpenAPI or other machine‑readable contract was found on the provider's site.
+  evidence:
+    - url: https://rcmrd.org/openapi.json
+      status: 404
+  checked: '2026-10-23'
+x-enrichment:
+  date: '2026-10-23'
+  status: enriched
+  artifacts_added: 7
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local,regulatory=local
